@@ -1,18 +1,21 @@
 .nav-bar {
+	background-color: #32363e;
+	/*background-color: #1e222a;*/
+	color: white;
+	height: 100vh;
+	width: 240px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
 }
 
-img.profile-bild {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	width: 80%;
+.profile-bild {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	width: 200px;
 	border-radius: 50%;
-	outline-color: "blue";
-	outline-width: 5px;
 }
