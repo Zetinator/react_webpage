@@ -9,19 +9,91 @@ function App() {
 			<header className="App-header">
 				<NavBar />
 			</header>
-			<main class="App-main">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
+			<main className="App-main">
+				<section id="Experience">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						experience
+					</a>
+				</section>
+				<section id="Education">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						education
+					</a>
+				</section>
+				<section id="Skills">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						education
+					</a>
+				</section>
+				<section id="Languages">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						education
+					</a>
+				</section>
+				<section id="Interests">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						education
+					</a>
+				</section>
+				<section id="Awards">
+					<img src={logo} className="App-logo" alt="logo" />
+					<p>
+						Edit <code>src/App.js</code> and save to reload.
+					</p>
+					<a
+						className="App-link"
+						href="https://reactjs.org"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						education
+					</a>
+				</section>
 			</main>
 		</div>
 	);
