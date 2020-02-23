@@ -1,6 +1,55 @@
 import React from "react";
 
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import Icon from '@material-ui/core/Icon';
+
 import "./About.css";
+
+const useStyles = makeStyles(theme => ({
+	button: {
+		margin: theme.spacing(1),
+	},
+}));
+
+function Contact() {
+	const classes = useStyles();
+	return (
+		<div>
+			<a className="btn" 
+				href="mailto:erickzetinator@gmail.com"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Button
+					variant="contained"
+					color="secondary"
+					className={classes.button}
+					startIcon={<Icon>email</Icon>}
+				>
+					Email-me
+				</Button>
+			</a>
+			<a className="btn"
+				href="https://zetinator.github.io/resume_english.pdf" target="_blank"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Button
+					variant="contained"
+					color="default"
+					className={classes.button}
+					startIcon={<CloudDownloadIcon />}
+				>
+					resume
+				</Button>
+			</a>
+		</div>
+	);
+}
+
 
 export default function About() {
 	return (
@@ -16,26 +65,18 @@ export default function About() {
 					</i>
 				</a>
 			</h1>
-			<p className="subheading">Schäffbräustr 9 · Ingolstadt, 85049 · +49 163 1932340 ·
-				<a className="mail" 
-					href="mailto:erickzetinator@gmail.com"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					erickzetinator@gmail.com</a>
-				· 
-				<a className="btn-resume"
-					href="https://zetinator.github.io/resume_english.pdf" target="_blank"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					resume <i className="far fa-file-pdf"></i>
-				</a>
+			<p className="subheading">Schäffbräustr 9 · Ingolstadt, 85049 · +49 163 1932340
+				<Contact />
 			</p>
 			<p className="lead">
 				I am experienced programming in C++ and Python,
 				I love everything related to machine learning and autonomous cars, 
-				and I am also skillful using Django to develop Web Applications.
+				and I am also skillful using Django to develop 
+			<a className="btn link blue"
+				href="https://sheltered-eyrie-56098.herokuapp.com/classifier/" target="_blank"
+				target="_blank"
+				rel="noopener noreferrer"
+			>Web Applications</a>
 			</p>
 			<div className="social-icons">
 				<a href="https://www.linkedin.com/in/erick-zetina-b922a2173/" target="_blank">
