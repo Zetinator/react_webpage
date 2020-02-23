@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import Icon from '@material-ui/core/Icon';
+import Tooltip from '@material-ui/core/Tooltip';
 
 import "./About.css";
 
@@ -23,28 +24,32 @@ function Contact() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<Button
-					variant="contained"
-					color="secondary"
-					className={classes.button}
-					startIcon={<Icon>email</Icon>}
-				>
-					Email-me
-				</Button>
+				<Tooltip title="Send me an email, I respond right away :)">
+					<Button
+						variant="contained"
+						color="secondary"
+						className={classes.button}
+						startIcon={<Icon>email</Icon>}
+					>
+						Email-me
+					</Button>
+				</Tooltip>
 			</a>
 			<a className="btn"
 				href="https://zetinator.github.io/resume_english.pdf" target="_blank"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<Button
-					variant="contained"
-					color="default"
-					className={classes.button}
-					startIcon={<CloudDownloadIcon />}
-				>
-					resume
-				</Button>
+				<Tooltip title="Download my resume in .pdf">
+					<Button
+						variant="contained"
+						color="default"
+						className={classes.button}
+						startIcon={<CloudDownloadIcon />}
+					>
+						resume
+					</Button>
+				</Tooltip>
 			</a>
 		</div>
 	);
@@ -72,11 +77,11 @@ export default function About() {
 				I am experienced programming in C++ and Python,
 				I love everything related to machine learning and autonomous cars, 
 				and I am also skillful using Django to develop 
-			<a className="btn link blue"
-				href="https://sheltered-eyrie-56098.herokuapp.com/classifier/" target="_blank"
-				target="_blank"
-				rel="noopener noreferrer"
-			>Web Applications</a>
+				<a className="btn link blue"
+					href="https://sheltered-eyrie-56098.herokuapp.com/classifier/" target="_blank"
+					target="_blank"
+					rel="noopener noreferrer"
+				>Web Applications</a>
 			</p>
 			<div className="social-icons">
 				<a href="https://www.linkedin.com/in/erick-zetina-b922a2173/" target="_blank">
