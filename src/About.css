@@ -9,9 +9,45 @@ h1.gross {
 	margin-bottom: .5rem;
 }
 
+h1.gross {
+	font-size: 6rem;
+	line-height: 5.5rem;
+	margin-bottom: .5rem;
+}
+
 .blue {
 	color: #61dafb
 }
+
+a.mail {
+	color: #61dafb
+}
+
+a.mail {
+	color: #61dafb
+}
+
+p.subheading {
+  text-transform: uppercase;
+  color: #868e96;
+  margin-top: .1rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+p.lead {
+  color: rgba(255,255,255,.9);
+  margin-bottom: 1;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+/*-----------------------*/
+/*buttons*/
+/*-----------------------*/
 
 @keyframes shadow-pulse
 {

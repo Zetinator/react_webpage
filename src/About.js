@@ -6,7 +6,7 @@ export default function About() {
 	return (
 		<div className="about">
 			<h1 className="gross">Erick <span className="gross blue">Zetina</span>
-				<a	className="btn-video pulse"
+				<a className="btn-video pulse"
 					href="https://youtu.be/LT-8tDMSFo0"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -16,14 +16,23 @@ export default function About() {
 					</i>
 				</a>
 			</h1>
-			<div className="subheading mb-5">Schäffbräustr 9 · Ingolstadt, 85049 · +49 163 1932340 ·
-				<a href="mailto:erickzetinator@gmail.com">erickzetinator@gmail.com</a>
-				·
-				<a id="get_resume" className="btn btn--stroke" href="https://zetinator.github.io/resume_english.pdf" target="_blank">
+			<p className="subheading">Schäffbräustr 9 · Ingolstadt, 85049 · +49 163 1932340 ·
+				<a className="mail" 
+					href="mailto:erickzetinator@gmail.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					erickzetinator@gmail.com</a>
+				· 
+				<a className="btn-resume"
+					href="https://zetinator.github.io/resume_english.pdf" target="_blank"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					resume <i className="far fa-file-pdf"></i>
 				</a>
-			</div>
-			<p className="lead mb-5">
+			</p>
+			<p className="lead">
 				I am experienced programming in C++ and Python,
 				I love everything related to machine learning and autonomous cars, 
 				and I am also skillful using Django to develop Web Applications.
