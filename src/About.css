@@ -1,0 +1,80 @@
+h1 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1.gross {
+	font-size: 6rem;
+	line-height: 5.5rem;
+	margin-bottom: .5rem;
+}
+
+.blue {
+	color: #61dafb
+}
+
+@keyframes shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0px rgba(255,0,0,.2);
+	}
+	100% {
+		box-shadow: 0 0 0 20px  rgba(255,0,0,0);
+	}
+}
+
+.btn-video {
+	display: inline-block;
+	position: relative;
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-left: 10px;
+	border-radius: 100%;
+	background-color: #32363e;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	/*transform: translate(0%,5);*/
+	color: white;
+}
+
+.btn-video i {
+	position: relative;
+	transform: translate(24%,-30%);
+	align-items: center;
+	font-size: 50px;
+}
+
+.btn-video:hover::after {
+	color: #61dafb;
+}
+
+.btn-video:hover {
+	background-color: red;
+}
+
+.pulse {
+	animation: shadow-pulse 1s infinite;
+}
+
+.social-icons a {
+	display: inline-block;
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: #495057;
+	color: #fff !important;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+	margin-right: 1rem;
+	transition: all 0.3s ease-in;
+}
+
+.social-icons a:last-child {
+	margin-right: 0;
+}
+
+.social-icons a:hover {
+	background-color: #0090B0;
+}
+
