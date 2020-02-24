@@ -113,7 +113,7 @@ h1 {
 
 h1.gross {
 	font-size: calc(4rem + 4vmin);
-	line-height: calc(1rem + 4vmin);
+	line-height: calc(1rem + 4.1vmin);
 	margin-bottom: .5rem;
 }
 
@@ -310,7 +310,7 @@ div.right {
 }
 @media (max-width: 992px) {
 	div.left {
-		max-width: 100%;
+		width: 100%;
 	}
 	div.right {
 		width: 100%;

@@ -93,7 +93,7 @@ export default function NavBar(props) {
 							<MenuIcon />
 						</IconButton>
 						<Typography variant="h6" className={classes.title}>
-							Who is Erick the Zetinator?
+							About me
 						</Typography>
 						<a href="https://unsplash.com/@zetinator"
 							target="_blank"
