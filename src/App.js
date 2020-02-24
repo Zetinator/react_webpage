@@ -4,6 +4,7 @@ import './App.css';
 
 import NavBar from './NavBar.js';
 import About from './About.js';
+import Experience from './Experience.js';
 
 function App() {
 	return (
@@ -16,18 +17,7 @@ function App() {
 					<About />
 				</section>
 				<section id="Experience">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						experience
-					</a>
+					<Experience />
 				</section>
 				<section id="Education">
 					<img src={logo} className="App-logo" alt="logo" />
