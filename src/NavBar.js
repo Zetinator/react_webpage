@@ -31,7 +31,7 @@ function SideBar() {
 				rel="noopener noreferrer"
 			>
 				<img className="profile-bild"
-					src="https://zetinator.github.io/img/profile.webp"
+					src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
 					alt="zetinator's profile bild"
 				/>
 			</a>
