@@ -22,8 +22,8 @@ body {
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 @media (min-width: 992px) {
 	.App-main section {
@@ -37,7 +37,7 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	.App-logo {
+	#react_logo {
 		animation: App-logo-spin infinite 20s linear;
 	}
 }
@@ -49,4 +49,297 @@ body {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.nav-bar {
+	display: none;
+	opacity: 0;
+	/*z-index: -2147483647;*/
+	background-color: #32363e;
+	/*background-color: #1e222a;*/
+	color: white;
+	height: 100vh;
+	width: 240px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	transition: opacity .5s ease-in;
+}
+.app-bar {
+	transition: all .5s ease-in;
+}
+@media (min-width: 992px) {
+	.nav-bar {
+		display: flex;
+		opacity: 1;
+	}
+	.app-bar {
+		display: none;
+	}
+}
+
+.profile-bild {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.mini {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40px;
+	border-radius: 50%;
+}
+
+
+/*-----------------------*/
+/*text*/
+/*-----------------------*/
+
+h1, h2, h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: calc(2rem + 2vmin);
+	/*margin-bottom: 5.5rem;*/
+}
+
+h1.gross {
+	font-size: calc(4rem + 4vmin);
+	line-height: calc(1rem + 4vmin);
+	margin-bottom: .5rem;
+}
+
+h2 {
+	font-size: calc(1.5rem + 1.5vmin);
+	font-weight: 600;
+	margin-bottom: .5rem;
+}
+
+h3 {
+	font-size: calc(1rem + 1.5vmin);
+	font-style: italic;
+	font-weight: 1000;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	color: white !important;
+}
+
+.red {
+	color: rgba(255,0,0,1);
+}
+
+.blue {
+	color: #61dafb;
+}
+
+.blue {
+	color: #61dafb;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+.darker {
+	transition: all .1s ease-in;
+
+}
+.darker:hover {
+	border: 0.1rem solid #61dafb;
+	border-radius: 5px;
+}
+
+a.link {
+	background: transparent !important;
+	margin-left: .5ch;
+	color: #61dafb;
+	transition: all 0.3s ease-in;
+}
+
+a.link:hover, a.link:focus {
+	border: 0.1rem solid #61dafb;
+	border-radius: 5px;
+
+}
+
+p.subheading {
+	margin-bottom: .5rem !important;
+	text-transform: uppercase;
+	color: #868e96;
+	margin-top: .1rem;
+	margin-bottom: 3rem;
+	font-weight: 500;
+	font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1.5rem;
+}
+
+p.lead {
+	color: rgba(255,255,255,.9);
+	/*color: #61dafb;*/
+	margin-bottom: 1;
+	font-weight: 500;
+	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: calc(10px + 2vmin);
+	text-justify: inter-word;
+}
+
+p.job-description {
+	color: rgba(255,255,255,.9);
+	/*color: #61dafb;*/
+	margin-bottom: 1;
+	font-weight: 500;
+	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1rem;
+	text-justify: inter-word;
+}
+p.date {
+	/*color: rgba(255,255,255,.9);*/
+	color: #61dafb;
+	margin-top: 1.5rem;
+	font-weight: 400;
+	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1rem;
+}
+
+
+
+/*-----------------------*/
+/*buttons*/
+/*-----------------------*/
+
+@keyframes shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0px rgba(255,0,0,.5);
+	}
+	100% {
+		box-shadow: 0 0 0 20px  rgba(255,0,0,0);
+	}
+}
+
+.play-arrow {
+	font-size: calc(4rem + 4vmin);
+}
+
+.btn-video {
+	display: inline-block;
+	position: relative;
+	height: calc(4rem + 4vmin);
+	width: calc(4rem + 4vmin);
+	margin-left: 10px;
+	border-radius: 100%;
+	background-color: #495057;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	transform: translate(0rem,.3rem);
+	color: white;
+}
+
+.btn-video i {
+	position: relative;
+	/*transform: translate(.6rem,-.8rem);*/
+	/*align-items: center;*/
+}
+
+.btn-video:hover::after {
+	color: #61dafb;
+}
+
+.btn-video:hover {
+	background-color: red;
+}
+
+.pulse {
+	animation: shadow-pulse 1s infinite;
+}
+.single-pulse {
+	animation: shadow-pulse 1s 1;
+}
+
+.social-icons a {
+	display: inline-block;
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: #495057;
+	color: #fff !important;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+	margin-right: 1rem;
+	transition: all 0.3s ease-in;
+}
+
+.social-icons a:last-child {
+	margin-right: 0;
+}
+
+.social-icons a:hover {
+	background-color: red;
+	animation: shadow-pulse 1s 1;
+}
+
+/*-----------------------*/
+/*layout*/
+/*-----------------------*/
+
+section > div {
+	width: 100%;
+}
+div.job-row {
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.left {
+	width: 80%;
+}
+div.right {
+	width: 20%;
+	text-align: right;
+}
+@media (max-width: 992px) {
+	div.left {
+		max-width: 100%;
+	}
+	div.right {
+		width: 100%;
+		text-align: left;
+	}
+}
+
+div.skill {
+	width: auto;
+	margin: 12px;
+}
+
+div.white-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 25px;
+}
+
+/*apply zoom in the little icons...*/
+img.zoom {
+	height: 60px;
+	margin-left: 20px;
+	transition: transform .2s; /* Animation */
+	margin: 0 auto;
+}
+img.zoom:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

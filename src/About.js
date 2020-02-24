@@ -2,12 +2,9 @@ import React from "react";
 
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import Icon from '@material-ui/core/Icon';
 import Tooltip from '@material-ui/core/Tooltip';
-
-import "./About.css";
 
 const useStyles = makeStyles(theme => ({
 	button: {
@@ -55,7 +52,6 @@ function Contact() {
 	);
 }
 
-
 export default function About() {
 	return (
 		<div className="about">
@@ -65,7 +61,7 @@ export default function About() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<i className="material-icons">
+					<i className="material-icons play-arrow">
 						play_arrow
 					</i>
 				</a>
@@ -78,22 +74,34 @@ export default function About() {
 				I love everything related to machine learning and autonomous cars, 
 				and I am also skillful using Django to develop 
 				<a className="btn link blue"
-					href="https://sheltered-eyrie-56098.herokuapp.com/classifier/" target="_blank"
+					href="https://sheltered-eyrie-56098.herokuapp.com/classifier/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>Web Applications</a>
 			</p>
 			<div className="social-icons">
-				<a href="https://www.linkedin.com/in/erick-zetina-b922a2173/" target="_blank">
+				<a href="https://www.linkedin.com/in/erick-zetina-b922a2173/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i className="fab fa-linkedin-in"></i>
 				</a>
-				<a href="https://github.com/Zetinator" target="_blank">
+				<a href="https://github.com/Zetinator"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i className="fab fa-github"></i>
 				</a>
-				<a href="https://www.facebook.com/zetinator" target="_blank">
+				<a href="https://www.facebook.com/zetinator"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i className="fab fa-facebook-f"></i>
 				</a>
-				<a href="https://wa.me/491631932340" target="_blank">
+				<a href="https://wa.me/491631932340"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i className="fab fa-whatsapp"></i>
 				</a>
 			</div>

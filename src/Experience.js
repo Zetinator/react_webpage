@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./Experience.css";
-
 function Job(props) {
 	return (
 		<div className="job-row">

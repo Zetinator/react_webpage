@@ -2,17 +2,15 @@ import React from "react";
 import lazySizes from 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
-import "./Skills.css";
-
 function Skill(props) {
 	return (
-		<div class="skill">
+		<div className="skill">
 			<a
 				href={props.website}
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<img class="lazyload zoom" 
+				<img className="lazyload zoom" 
 					data-src={props.image}
 					alt={props.alt}
 					id={props.alt}
