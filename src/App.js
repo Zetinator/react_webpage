@@ -5,6 +5,10 @@ import './App.css';
 import NavBar from './NavBar.js';
 import About from './About.js';
 import Experience from './Experience.js';
+import Education from './Education.js';
+import Languages from './Languages.js';
+import Interests from './Interests.js';
+import Awards from './Awards.js';
 
 function App() {
 	return (
@@ -20,18 +24,7 @@ function App() {
 					<Experience />
 				</section>
 				<section id="Education">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						education
-					</a>
+					<Education />
 				</section>
 				<section id="Skills">
 					<img src={logo} className="App-logo" alt="logo" />
@@ -48,46 +41,13 @@ function App() {
 					</a>
 				</section>
 				<section id="Languages">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						education
-					</a>
+					<Languages />
 				</section>
 				<section id="Interests">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						education
-					</a>
+					<Interests />
 				</section>
 				<section id="Awards">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						education
-					</a>
+					<Awards />
 				</section>
 			</main>
 		</div>

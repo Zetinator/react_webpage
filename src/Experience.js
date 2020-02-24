@@ -6,8 +6,8 @@ function Job(props) {
 	return (
 		<div className="job-row">
 			<div className="left">
-				<h2 className="red">{props.position}</h2>
-				<h3 className="blue">{props.company}</h3>
+				<h2 className="blue">{props.position}</h2>
+				<h3>{props.company}</h3>
 				<p className="job-description">
 					{props.description_first}<br/>
 					{props.description_second}

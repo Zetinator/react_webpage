@@ -41,7 +41,7 @@ h3 {
 	font-style: italic;
 	font-weight: 1000;
 	margin-bottom: .5rem;
-	color: white !important;
+	color: rgba(255,255,255,.8)
 }
 
 .red {
@@ -86,4 +86,7 @@ p.date {
 	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	font-size: 1rem;
 }
+
+
+
 
