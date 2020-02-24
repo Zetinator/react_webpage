@@ -23,9 +23,9 @@ function smoothScroll(section) {
 	console.log(document.getElementById(section))
 }
 
-function Desktop() {
+function SideBar() {
 	return(
-		<div className="nav-bar">
+		<div className="nav-bar" id="nav-bar">
 			<a href="https://unsplash.com/@zetinator"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -69,27 +69,27 @@ function HideOnScroll(props) {
 	);
 }
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav-bar").style.display = "flex";
+  document.getElementById("nav-bar").style.opacity = 1;
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("nav-bar").style.display = "none";
   document.body.style.backgroundColor = "white";
 }
 
-function Mobile(props) {
+export default function NavBar(props) {
 	const classes = useStyles();
 	return (
 		<div>
+			<div className="app-bar">
 			<HideOnScroll {...props}>
 				<AppBar>
 					<Toolbar>
 						<IconButton edge="start" 
 							className={classes.menuButton} 
-							//onClick={toggleDrawer("left", true)}
+							onClick={openNav}
 							color="inherit"
 							aria-label="menu">
 							<MenuIcon />
@@ -109,12 +109,9 @@ function Mobile(props) {
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>
-			<Toolbar />
+			<Toolbar className="app-bar" />
+			</div>
+			<SideBar />
 		</div>
-	);
-}
-export default function NavBar(props) {
-	return (
-		<Mobile />
 	);
 }
