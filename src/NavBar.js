@@ -8,17 +8,49 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-function smoothScroll(section) {
-	document.getElementById(section).scrollIntoView({ 
-		behavior: 'smooth' 
+async function smoothScroll(section) {
+	await new Promise(() => {
+		document.getElementById(section).scrollIntoView({ 
+			behavior: 'smooth' 
+		})
 	})
-	console.log(document.getElementById(section))
+	return
+}
+
+function remoteClick(section) {
+	console.log(`pressing: ${section}_button`)
+	document.getElementById(section+`_button`).click()
+	console.log(document.getElementById(section+`_button`))
+}
+
+function MobileBar() {
+	return(
+		<div className="nav-bar mobile" id="nav-bar-mobile">
+			<a href="https://unsplash.com/@zetinator"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<img className="profile-bild"
+					src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
+					alt="zetinator's profile bild"
+				/>
+			</a>
+			<List>
+				{["About", "Experience", "Education", "Skills", "Languages", "Interests", "Awards"].map((text, index) => (
+					<ListItem button key={text} onClick={() => {remoteClick(text)}}>
+						<ListItemText primary={text} />
+					</ListItem>
+				))}
+			</List>
+		</div>
+	);
 }
 
 function SideBar() {
@@ -35,7 +67,7 @@ function SideBar() {
 			</a>
 			<List>
 				{["About", "Experience", "Education", "Skills", "Languages", "Interests", "Awards"].map((text, index) => (
-					<ListItem button key={text} onClick={() => {smoothScroll(text)}}>
+					<ListItem button key={text} id={text+`_button`} onClick={() => {smoothScroll(text)}}>
 						<ListItemText primary={text} />
 					</ListItem>
 				))}
@@ -50,6 +82,9 @@ const useStyles = makeStyles(theme => ({
 	},
 	title: {
 		flexGrow: 1,
+	},
+	list: {
+		width: 240,
 	},
 }));
 
@@ -66,48 +101,70 @@ function HideOnScroll(props) {
 		</Slide>
 	);
 }
-function openNav() {
-  //document.getElementById("nav-bar").style.display = "flex";
-  //document.getElementById("nav-bar").style.opacity = 1;
-  //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("nav-bar").style.display = "none";
-  document.body.style.backgroundColor = "white";
-}
 
 export default function NavBar(props) {
 	const classes = useStyles();
+	const [state, setState] = React.useState({
+		left: false
+	});
+	const toggleDrawer = (side, open) => event => {
+		if (
+			event &&
+			event.type === "keydown" &&
+			(event.key === "Tab" || event.key === "Shift")
+		) {
+			return;
+		}
+		setState({ ...state, [side]: open });
+	};
+	const sideList = side => (
+		<div
+			className={classes.list}
+			role="presentation"
+			onClick={toggleDrawer(side, false)}
+			onKeyDown={toggleDrawer(side, false)}
+		>
+			<div>
+				<MobileBar />
+			</div>
+		</div>
+	);
 	return (
 		<div>
 			<div className="app-bar">
-			<HideOnScroll {...props}>
-				<AppBar style={{background: '#32363e'}}>
-					<Toolbar>
-						<IconButton edge="start" 
-							className={classes.menuButton} 
-							onClick={openNav}
-							color="inherit"
-							aria-label="menu">
-							<MenuIcon />
-						</IconButton>
-						<Typography variant="h6" className={classes.title}>
-							About me
-						</Typography>
-						<a href="https://unsplash.com/@zetinator"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img className="mini"
-								src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
-								alt="zetinator's profile bild"
-							/>
-						</a>
-					</Toolbar>
-				</AppBar>
-			</HideOnScroll>
-			<Toolbar className="app-bar" />
+				<HideOnScroll {...props}>
+					<AppBar style={{background: '#32363e'}}>
+						<Toolbar>
+							<IconButton edge="start" 
+								className={classes.menuButton} 
+								onClick={toggleDrawer("left", true)}
+								color="inherit"
+								aria-label="menu">
+								<MenuIcon />
+							</IconButton>
+							<SwipeableDrawer
+								open={state.left}
+								onClose={toggleDrawer("left", false)}
+								onOpen={toggleDrawer("left", true)}
+							>
+								{sideList("left")}
+							</SwipeableDrawer>
+							<Typography variant="h6" className={classes.title}>
+								About me
+							</Typography>
+							<a href="https://unsplash.com/@zetinator"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img className="mini"
+									src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
+									alt="zetinator's profile bild"
+								/>
+							</a>
+						</Toolbar>
+					</AppBar>
+				</HideOnScroll>
+				<Toolbar className="app-bar" />
 			</div>
 			<SideBar />
 		</div>
