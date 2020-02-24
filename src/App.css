@@ -116,6 +116,13 @@ h1.gross {
 	line-height: calc(1rem + 4.1vmin);
 	margin-bottom: .5rem;
 }
+@media (max-width: 992px) {
+	h1.gross {
+		font-size: 4rem;
+		line-height: 2rem;
+		margin-bottom: .5rem;
+	}
+}
 
 h2 {
 	font-size: calc(1.5rem + 1.5vmin);
@@ -241,6 +248,15 @@ p.date {
 	transition: all 0.5s ease-in-out;
 	transform: translate(0rem,.3rem);
 	color: white;
+}
+@media (max-width: 992px) {
+	.play-arrow {
+		font-size: 4rem;
+	}
+	.btn-video {
+		height: 4rem;
+		width: 4rem;
+	}
 }
 
 .btn-video i {

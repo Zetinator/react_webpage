@@ -83,7 +83,7 @@ export default function NavBar(props) {
 		<div>
 			<div className="app-bar">
 			<HideOnScroll {...props}>
-				<AppBar>
+				<AppBar style={{background: '#32363e'}}>
 					<Toolbar>
 						<IconButton edge="start" 
 							className={classes.menuButton} 
