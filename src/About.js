@@ -36,7 +36,7 @@ function Contact() {
 				</Tooltip>
 			</a>
 			<a className="btn"
-				href="https://zetinator.github.io/resume_english.pdf" target="_blank"
+				href="https://drive.google.com/open?id=1YQmdqDWlxR9PF5auWuAIFq77VhmIxehH" target="_blank"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
