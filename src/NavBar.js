@@ -69,9 +69,9 @@ function HideOnScroll(props) {
 	);
 }
 function openNav() {
-  document.getElementById("nav-bar").style.display = "flex";
-  document.getElementById("nav-bar").style.opacity = 1;
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  //document.getElementById("nav-bar").style.display = "flex";
+  //document.getElementById("nav-bar").style.opacity = 1;
+  //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
@@ -102,7 +102,7 @@ export default function NavBar(props) {
 							rel="noopener noreferrer"
 						>
 							<img className="mini"
-								src="https://zetinator.github.io/img/profile.webp"
+								src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
 								alt="zetinator's profile bild"
 							/>
 						</a>

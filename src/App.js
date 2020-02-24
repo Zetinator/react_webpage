@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
 
 import NavBar from './NavBar.js';
 import About from './About.js';
 import Experience from './Experience.js';
 import Education from './Education.js';
+import Skills from './Skills.js';
 import Languages from './Languages.js';
 import Interests from './Interests.js';
 import Awards from './Awards.js';
@@ -27,18 +28,7 @@ function App() {
 					<Education />
 				</section>
 				<section id="Skills">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						education
-					</a>
+					<Skills />
 				</section>
 				<section id="Languages">
 					<Languages />

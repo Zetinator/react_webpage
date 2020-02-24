@@ -8,7 +8,16 @@ export default function Education() {
 			<h1>Education</h1>
 			<div className="job-row">
 				<div className="left">
-					<h2 className="blue">Instituto Tecnológico Autónomo de México</h2>
+					<h2 className="blue">
+						<a
+							className="App-link darker"
+							href="https://www.itam.mx/en/1/pages/about-itam"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Instituto Tecnológico Autónomo de México
+						</a>
+					</h2>
 					<h3 className="red">BACHELOR MECHATRONICS ENGINEER</h3>
 					<p className="job-description">GPA: 87/100</p>
 				</div>
@@ -18,7 +27,16 @@ export default function Education() {
 			</div>
 			<div className="job-row">
 				<div className="left">
-					<h2 className="blue">Technische Hochschule Ingolstadt</h2>
+					<h2 className="blue">
+						<a
+							className="App-link darker"
+							href="https://www.thi.de/hochschule/ueber-uns/campus/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Technische Hochschule Ingolstadt
+						</a>
+					</h2>
 					<h3 className="red">COMPUTER SCIENCE (International student)</h3>
 					<p className="job-description">GPA: 70/100</p>
 				</div>

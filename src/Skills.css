@@ -1,0 +1,99 @@
+section div {
+	width: 100%;
+}
+
+div.skill {
+	width: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+div.white-container {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background-color: white;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+/*apply zoom in the little icons...*/
+img.zoom {
+	height: 60px;
+	margin-left: 20px;
+	transition: transform .2s; /* Animation */
+	margin: 0 auto;
+}
+img.zoom:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+h1, h2, h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 3.5rem;
+	/*margin-bottom: 5.5rem;*/
+}
+
+h2.blue {
+	font-size: 2rem;
+	font-style: italic;
+	line-height: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1rem;
+	font-style: italic;
+	font-weight: 1000;
+	margin-bottom: .5rem;
+	color: white !important;
+}
+
+.red {
+	color: rgba(255,0,0,1);
+}
+
+.blue {
+	color: #61dafb;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+a.link {
+	background: transparent !important;
+	margin-left: .5ch;
+	color: #61dafb;
+	transition: all 0.3s ease-in;
+}
+
+a.link:hover, a.link:focus {
+	border: 0.1rem solid #61dafb;
+	border-radius: 5px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	#react_logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
