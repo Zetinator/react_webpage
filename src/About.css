@@ -9,12 +9,6 @@ h1.gross {
 	margin-bottom: .5rem;
 }
 
-h1.gross {
-	font-size: 6rem;
-	line-height: 5.5rem;
-	margin-bottom: .5rem;
-}
-
 .blue {
 	color: #61dafb;
 }
@@ -37,6 +31,7 @@ a.link:hover, a.link:focus {
 }
 
 p.subheading {
+	margin-bottom: .5rem !important;
 	text-transform: uppercase;
 	color: #868e96;
 	margin-top: .1rem;

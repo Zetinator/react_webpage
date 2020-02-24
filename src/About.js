@@ -71,8 +71,8 @@ export default function About() {
 				</a>
 			</h1>
 			<p className="subheading">Schäffbräustr 9 · Ingolstadt, 85049 · +49 163 1932340
-				<Contact />
 			</p>
+			<Contact />
 			<p className="lead">
 				I am experienced programming in C++ and Python,
 				I love everything related to machine learning and autonomous cars, 

@@ -19,3 +19,11 @@
 	width: 200px;
 	border-radius: 50%;
 }
+
+.mini {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40px;
+	border-radius: 50%;
+}
