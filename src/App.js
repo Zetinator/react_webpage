@@ -9,6 +9,8 @@ import Skills from "./Skills.js";
 import Languages from "./Languages.js";
 import Interests from "./Interests.js";
 import Awards from "./Awards.js";
+import Particles from 'react-particles-js';
+import particlesConfig from './assets/particlesConfig'
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <NavBar />
       </header>
       <main className="App-main" id="App-main">
+        <Particles params={particlesConfig}/>
         <section id="About">
           <About />
         </section>
