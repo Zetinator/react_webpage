@@ -3,6 +3,7 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import Icon from "@material-ui/core/Icon";
 import Tooltip from "@material-ui/core/Tooltip";
 
@@ -50,6 +51,23 @@ function Contact() {
           </Button>
         </Tooltip>
       </a>
+      <a
+        className="btn"
+        href="https://youtu.be/LT-8tDMSFo0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Tooltip title="Watch my autonomous car in action! :D">
+          <Button
+            variant="contained"
+            color="default"
+            className={classes.button}
+            startIcon={<PlayCircleOutlineIcon />}
+          >
+            greatest project
+          </Button>
+        </Tooltip>
+      </a>
     </div>
   );
 }
@@ -58,15 +76,8 @@ export default function About() {
   return (
     <div className="about">
       <h1 className="gross">
-        Erick <span className="gross blue">Zetina</span>
-        <a
-          className="btn-video pulse"
-          href="https://youtu.be/LT-8tDMSFo0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="material-icons play-arrow">play_arrow</i>
-        </a>
+        Erick <span className="blue">Zetina</span>
+
       </h1>
       <p className="subheading">
         Schäffbräustr 9 · Ingolstadt, 85049 · +52 55 8686 7462

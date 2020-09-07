@@ -106,15 +106,18 @@ h1 {
 }
 
 h1.gross {
+  display: inline-block;
   font-size: calc(4rem + 4vmin);
-  line-height: calc(1rem + 4.1vmin);
-  margin-bottom: 0.5rem;
+  line-height: calc(1rem + 3vmin);
+  margin-right: 1rem;
+  margin-bottom: 5.5rem;
 }
 @media (max-width: 992px) {
   h1.gross {
-    font-size: 4rem;
-    line-height: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin-top: .1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -285,6 +288,29 @@ p.date {
   animation: shadow-pulse 1s infinite;
 }
 .single-pulse {
+  animation: shadow-pulse 1s 1;
+}
+
+.video-btn a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.video-btn a:last-child {
+  margin-right: 0;
+}
+
+.video-btn a:hover {
+  background-color: red;
   animation: shadow-pulse 1s 1;
 }
 
