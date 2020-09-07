@@ -46,7 +46,7 @@ body {
 
 .nav-bar {
   display: none;
-  background-color: #32363e;
+  background-color: rgba(50, 54, 62, .6);
   /*background-color: #1e222a;*/
   color: white;
   height: 100vh;
@@ -96,7 +96,7 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 150;
   text-transform: uppercase;
 }
 
@@ -119,15 +119,15 @@ h1.gross {
 }
 
 h2 {
-  font-size: calc(1.5rem + 1.5vmin);
+  font-size: calc(1rem + 1.5vmin);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-size: calc(1rem + 1.5vmin);
+  font-size: calc(1rem + 1vmin);
   font-style: italic;
-  font-weight: 1000;
+  font-weight: 400;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: white !important;
@@ -313,7 +313,7 @@ p.date {
 
 .pulsing-link a {
   display: inline-block;
-  height: 2.5rem;
+  height: calc(1.5rem + 1.5vmin);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: #495057;
@@ -321,8 +321,8 @@ p.date {
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: calc(.5rem + 1.5vmin);
+  line-height: calc(1.5rem + 1.5vmin);
   margin-right: 1rem;
   transition: all 0.3s ease-in;
 }

@@ -15,7 +15,7 @@ export default function Languages() {
           <span role="img" aria-label="book">
             ✅
           </span>{" "}
-          ENGLISH (FLUENT 100/120 TOEFL IBT)
+          ENGLISH (FLUENT C1)
         </h3>
         <h3>
           <span role="img" aria-label="book">
