@@ -14,22 +14,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-async function smoothScroll(section) {
-  await new Promise(() => {
-    document.getElementById(section).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-  return;
-}
 
-function remoteClick(section) {
-  console.log(`pressing: ${section}_button`);
-  document.getElementById(section + `_button`).click();
-  console.log(document.getElementById(section + `_button`));
-}
-
-function MobileBar() {
+function MobileBar(props) {
   return (
     <div className="nav-bar mobile" id="nav-bar-mobile">
       <a
@@ -57,7 +43,7 @@ function MobileBar() {
             button
             key={text}
             onClick={() => {
-              remoteClick(text);
+              props.onClick(text);
             }}
           >
             <ListItemText primary={text} />
@@ -68,7 +54,7 @@ function MobileBar() {
   );
 }
 
-function SideBar() {
+function SideBar(props) {
   return (
     <div className="nav-bar" id="nav-bar">
       <a
@@ -97,7 +83,7 @@ function SideBar() {
             key={text}
             id={text + `_button`}
             onClick={() => {
-              smoothScroll(text);
+              props.onClick(text);
             }}
           >
             <ListItemText primary={text} />
@@ -157,7 +143,7 @@ export default function NavBar(props) {
       onKeyDown={toggleDrawer(side, false)}
     >
       <div>
-        <MobileBar />
+        <MobileBar {...props}/>
       </div>
     </div>
   );
@@ -202,7 +188,7 @@ export default function NavBar(props) {
         </HideOnScroll>
         <Toolbar className="app-bar" />
       </div>
-      <SideBar />
+      <SideBar {...props}/>
     </div>
   );
 }

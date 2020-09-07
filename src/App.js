@@ -12,14 +12,26 @@ import Awards from "./Awards.js";
 import Particles from 'react-particles-js';
 import particlesConfig from './assets/particlesConfig'
 
+
 function App() {
+  async function smoothScroll(section) {
+    await new Promise(() => {
+      document.getElementById(section).scrollIntoView({
+        behavior: "smooth",
+      });
+      console.log(document.getElementById(section));
+    });
+    return;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar />
+        <NavBar
+          onClick={(section) => smoothScroll(section)} />
       </header>
       <main className="App-main" id="App-main">
-        <Particles params={particlesConfig}/>
+        <Particles params={particlesConfig} />
         <section id="About">
           <About />
         </section>
