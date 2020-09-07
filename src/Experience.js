@@ -2,10 +2,19 @@ import React from "react";
 
 function Job(props) {
   return (
-    <div className="job-row">
+    <div className="job-row pulsing-link">
       <div className="left">
         <h2 className="blue">{props.position}</h2>
-        <h3>{props.company}</h3>
+        <h3>
+          <a
+            className="App-link"
+            href={props.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          {props.company}
+            </a>
+        </h3>
         <p className="job-description">
           {props.description_first}
           <br />
@@ -24,6 +33,7 @@ export default function Experience() {
     {
       position: "Data Scientist",
       company: "LISA Insurtech",
+      website: "https://www.lisainsurtech.com/en/home-page/",
       description_first:
         "Created a REST API for named entity recognition that reads legal documents, and extracts useful information from them, using machine learning and NLP.",
       description_second:
@@ -33,6 +43,7 @@ export default function Experience() {
     {
       position: "Software Development, Intern",
       company: "Audi AG",
+      website: "https://www.audi.de/de/brand/de.html",
       description_first:
         "Training of a neural network (GAN) for the photo-realistic generation of images based on simulated data using tensorflow, that will be used to generate realistic scenarios to train autonomous agents using simulations.",
       description_second:
@@ -42,6 +53,7 @@ export default function Experience() {
     {
       position: "BACK-END DEVELOPMENT",
       company: "KOOMKIN S.A. DE C.V.",
+      website: "https://www.koomkin.com.mx/",
       description_first:
         "Created a REST API to automatically send WhatsApp messages using bots that learned to handle business conversations based on a convolutional neural-network and NLP to support the Customer Relationship Management (CRM).",
       description_second:
@@ -54,6 +66,7 @@ export default function Experience() {
       <Job
         position={job.position}
         company={job.company}
+        website={job.website}
         description_first={job.description_first}
         description_second={job.description_second}
         date={job.date}

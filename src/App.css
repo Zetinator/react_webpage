@@ -149,6 +149,17 @@ a.btn {
   text-decoration: none;
 }
 
+.whiter {
+  transition: all 0.1s ease-in;
+  color: #ffffff;
+  text-decoration: none;
+}
+.whiter:hover {
+  border: 0.1rem solid #ffffff;
+  padding-right: 0.2rem;
+  border-radius: 5px;
+}
+
 .darker {
   transition: all 0.1s ease-in;
 }
@@ -296,6 +307,31 @@ p.date {
 }
 
 .social-icons a:hover {
+  background-color: red;
+  animation: shadow-pulse 1s 1;
+}
+
+.pulsing-link a {
+  display: inline-block;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.pulsing-link a:last-child {
+  margin-right: 0;
+}
+
+.pulsing-link a:hover {
   background-color: red;
   animation: shadow-pulse 1s 1;
 }

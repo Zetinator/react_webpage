@@ -17,6 +17,7 @@ function Skill(props) {
 }
 
 export default function Experience() {
+  // list of software that we know
   const softwares = [
     {
       website: "https://en.wikipedia.org/wiki/Amazon_Web_Services",
@@ -27,32 +28,8 @@ export default function Experience() {
     {
       website: "https://en.wikipedia.org/wiki/Google_Cloud_Platform",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Google_Cloud_Logo.svg/512px-Google_Cloud_Logo.svg.png",
+        "https://cloud.google.com/images/social-icon-google-cloud-1200-630.png",
       alt: "gcp",
-    },
-    {
-      website: "https://en.wikipedia.org/wiki/Linux",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/225px-Tux.svg.png",
-      alt: "linux",
-    },
-    {
-      website: "https://en.wikipedia.org/wiki/Node.js",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
-      alt: "node_js",
-    },
-    {
-      website: "https://en.wikipedia.org/wiki/React_(web_framework)",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png",
-      alt: "react_logo",
-    },
-    {
-      website: "https://en.wikipedia.org/wiki/Django_(web_framework)",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/278px-Django_logo.svg.png",
-      alt: "django",
     },
     {
       website: "https://en.wikipedia.org/wiki/Docker_(software)",
@@ -67,16 +44,16 @@ export default function Experience() {
       alt: "kubernetes",
     },
     {
-      website: "https://en.wikipedia.org/wiki/Git",
+      website: "https://en.wikipedia.org/wiki/Django_(web_framework)",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/225px-Git-logo.svg.png",
-      alt: "git",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/278px-Django_logo.svg.png",
+      alt: "django",
     },
     {
-      website: "https://en.wikipedia.org/wiki/Jenkins_(software)",
+      website: "https://en.wikipedia.org/wiki/Node.js",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/langfr-165px-Jenkins_logo.svg.png",
-      alt: "jenkins",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
+      alt: "node_js",
     },
     {
       website: "https://en.wikipedia.org/wiki/PostgreSQL",
@@ -91,10 +68,46 @@ export default function Experience() {
       alt: "mongo_db",
     },
     {
+      website: "https://en.wikipedia.org/wiki/React_(web_framework)",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png",
+      alt: "react_logo",
+    },
+    {
+      website: "https://en.wikipedia.org/wiki/Vue.js",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/277px-Vue.js_Logo_2.svg.png",
+      alt: "vue_logo",
+    },
+    {
+      website: "https://fastapi.tiangolo.com/",
+      image:
+        "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
+      alt: "fastapi_logo",
+    },
+    {
+      website: "https://en.wikipedia.org/wiki/Git",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/225px-Git-logo.svg.png",
+      alt: "git",
+    },
+    {
+      website: "https://en.wikipedia.org/wiki/Jenkins_(software)",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/langfr-165px-Jenkins_logo.svg.png",
+      alt: "jenkins",
+    },
+    {
       website: "https://en.wikipedia.org/wiki/Nginx",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/330px-Nginx_logo.svg.png",
+        "https://www.nginx.com/wp-content/uploads/2020/05/NGINX-product-icon.svg",
       alt: "nginx",
+    },
+    {
+      website: "https://en.wikipedia.org/wiki/Linux",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/225px-Tux.svg.png",
+      alt: "linux",
     },
     {
       website: "https://en.wikipedia.org/wiki/Robot_Operating_System",
@@ -102,22 +115,12 @@ export default function Experience() {
       alt: "ros",
     },
     {
-      website: "https://en.wikipedia.org/wiki/CMake",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cmake.svg/144px-Cmake.svg.png",
-      alt: "cmake",
+      website: "https://en.wikipedia.org/wiki/Elasticsearch",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Elasticsearch_logo.svg/320px-Elasticsearch_logo.svg.png",
+      alt: "elasticsearch_logo",
     },
   ];
-  const softwareJSX = softwares.map((software, index) => {
-    return (
-      <Skill
-        website={software.website}
-        image={software.image}
-        alt={software.alt}
-        key={index}
-      />
-    );
-  });
+  // list of programming languajes
   const languages = [
     {
       website: "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -144,6 +147,17 @@ export default function Experience() {
       alt: "cpp",
     },
   ];
+  // map renderers
+  const softwareJSX = softwares.map((software, index) => {
+    return (
+      <Skill
+        website={software.website}
+        image={software.image}
+        alt={software.alt}
+        key={index}
+      />
+    );
+  });
   const languageJSX = languages.map((language, index) => {
     return (
       <Skill
@@ -158,7 +172,7 @@ export default function Experience() {
   return (
     <div className="skills">
       <h1>Skills</h1>
-      <h2 className="blue">Software & Tools</h2>
+      <h2 className="blue">Tech Stack</h2>
       <div className="white-container">{softwareJSX}</div>
       <h2 className="blue">PROGRAMMING LANGUAGES</h2>
       <div className="white-container">{languageJSX}</div>
