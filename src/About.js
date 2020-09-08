@@ -53,7 +53,7 @@ function Contact() {
       </a>
       <a
         className="btn"
-        href="https://youtu.be/LT-8tDMSFo0"
+        href="https://youtu.be/LT-8tDMSFo0?t=40"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -86,7 +86,7 @@ export default function About() {
       <p className="lead">
         I am experienced programming in Python, Javascript and C++, I love everything
         related to machine learning and autonomous cars, and I am also skillful
-        using Django to develop Web Applications
+        using Django and React to develop Web Applications
       </p>
       <div className="social-icons">
         <a
@@ -111,7 +111,7 @@ export default function About() {
           <i className="fab fa-facebook-f"></i>
         </a>
         <a
-          href="https://wa.me/491631932340"
+          href="https://wa.me/525586867462"
           target="_blank"
           rel="noopener noreferrer"
         >
