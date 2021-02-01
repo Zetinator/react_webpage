@@ -31,6 +31,16 @@ function Job(props) {
 export default function Experience() {
   const jobs = [
     {
+      position: "Software Engineer",
+      company: "Google",
+      website: "https://www.google.com",
+      description_first:
+        "Geo Enterprise (data quality team), improving the quality of responses for a variety of queries from Google Maps",
+      description_second:
+        "",
+      date: "January 2021 - Now",
+    },
+    {
       position: "Data Scientist",
       company: "LISA Insurtech",
       website: "https://www.lisainsurtech.com/en/home-page/",
@@ -38,7 +48,7 @@ export default function Experience() {
         "Created a REST API for named entity recognition that reads legal documents, and extracts useful information from them, using machine learning and NLP.",
       description_second:
         "Implemented an elastic search server to facilitate search and retrieval of thousands of documents.",
-      date: "February 2020 - Now",
+      date: "February 2020 - January 2021",
     },
     {
       position: "Software Development, Intern",
@@ -49,16 +59,6 @@ export default function Experience() {
       description_second:
         "Implementation of a tool for the quality assurance of descriptors of road networks (C++ and Python) as well as code improvements and bug fixes for various projects.",
       date: "June 2019 - December 2019 and February 2018 - August 2018",
-    },
-    {
-      position: "BACK-END DEVELOPMENT",
-      company: "KOOMKIN S.A. DE C.V.",
-      website: "https://www.koomkin.com.mx/",
-      description_first:
-        "Created a REST API to automatically send WhatsApp messages using bots that learned to handle business conversations based on a convolutional neural-network and NLP to support the Customer Relationship Management (CRM).",
-      description_second:
-        "Created a call-tracking system, to automatically make/record calls, and obtain transcripts from the conversations for further data-analysis. Development of a web-application in Django on an Nginx server.",
-      date: "August 2018 - June 2019",
     },
   ];
   const jobsJSX = jobs.map((job, index) => {

@@ -80,14 +80,18 @@ export default function About() {
 
       </h1>
       <p className="subheading">
-        Schäffbräustr 9 · Ingolstadt, 85049 · +52 55 8686 7462
+        Ciudad de México, CDMX · +52 55 8686 7462
       </p>
       <Contact />
       <p className="lead">
-        I am experienced programming in Python, Javascript and C++, I love everything
-        related to machine learning and autonomous cars, and I am also skillful
-        using Django and React to develop Web Applications
+        Software Engineer at:
       </p>
+      <img
+        className="lazyload zoom"
+        data-src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="google logo"
+        id="google_id"
+      />
       <div className="social-icons">
         <a
           href="https://www.linkedin.com/in/erick-zetina-b922a2173/"

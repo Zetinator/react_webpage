@@ -13,6 +13,14 @@ export default function Languages() {
           and "Great expectations" by Charles Dickens.
         </p>
       </div>
+      <div className="job-row">
+        <p className="lead">
+          <span role="img" aria-label="laptop">
+            💻
+          </span>{" "}
+          I love everything related to machine learning and computer science
+        </p>
+      </div>
     </div>
   );
 }
