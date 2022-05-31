@@ -62,12 +62,6 @@ export default function Experience() {
       alt: "postgres",
     },
     {
-      website: "https://en.wikipedia.org/wiki/MongoDB",
-      image:
-        "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/527px-MongoDB-Logo.svg.png",
-      alt: "mongo_db",
-    },
-    {
       website: "https://en.wikipedia.org/wiki/React_(web_framework)",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png",
