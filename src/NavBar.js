@@ -179,7 +179,7 @@ export default function NavBar(props) {
               >
                 <img
                   className="mini"
-                  src="https://pbs.twimg.com/profile_images/1222730619727294464/6mts8Pri_400x400.jpg"
+                  src="https://pbs.twimg.com/profile_images/1531423537000353793/BU1X9Ub7_400x400.jpg"
                   alt="zetinator's profile bild"
                 />
               </a>
