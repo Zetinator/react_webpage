@@ -80,7 +80,7 @@ export default function About() {
 
       </h1>
       <p className="subheading">
-        California, USA · +1 650 307 3102
+        +1 650 307 3102
       </p>
       <Contact />
       <p className="lead">
