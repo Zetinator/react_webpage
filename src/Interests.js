@@ -18,7 +18,7 @@ export default function Languages() {
           <span role="img" aria-label="laptop">
             💻
           </span>{" "}
-          I love everything related to machine learning and computer science
+          I love everything related to machine learning.
         </p>
       </div>
     </div>

@@ -25,7 +25,7 @@ function MobileBar(props) {
       >
         <img
           className="profile-bild"
-          src="https://pbs.twimg.com/profile_images/1531423537000353793/BU1X9Ub7_400x400.jpg"
+          src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
           alt="zetinator's profile bild"
         />
       </a>
@@ -64,7 +64,7 @@ function SideBar(props) {
       >
         <img
           className="profile-bild"
-          src="https://pbs.twimg.com/profile_images/1531423537000353793/BU1X9Ub7_400x400.jpg"
+          src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
           alt="zetinator's profile bild"
         />
       </a>
@@ -143,7 +143,7 @@ export default function NavBar(props) {
       onKeyDown={toggleDrawer(side, false)}
     >
       <div>
-        <MobileBar {...props}/>
+        <MobileBar {...props} />
       </div>
     </div>
   );
@@ -179,7 +179,7 @@ export default function NavBar(props) {
               >
                 <img
                   className="mini"
-                  src="https://pbs.twimg.com/profile_images/1531423537000353793/BU1X9Ub7_400x400.jpg"
+                  src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
                   alt="zetinator's profile bild"
                 />
               </a>
@@ -188,7 +188,7 @@ export default function NavBar(props) {
         </HideOnScroll>
         <Toolbar className="app-bar" />
       </div>
-      <SideBar {...props}/>
+      <SideBar {...props} />
     </div>
   );
 }

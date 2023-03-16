@@ -2,15 +2,18 @@ import React from "react";
 
 export default function Awards() {
   return (
-    <div className="awards">
-      <h1>Awards</h1>
-      <div className="job-row">
-        <p className="lead">
-          <span role="img" aria-label="trophy">
-            🏆
-          </span>{" "}
-          3rd Place - Torneo Mexicano de Robótica (TMR 2017)
-        </p>
+    <div className="job-row pulsing-link">
+      <div className="left">
+        <h3>
+          <a
+            className="App-link"
+            href="https://www.hackerrank.com/certificates/843de18a2522"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🏆 HackeRank Certificate Problem Solving (Advanced)
+          </a>
+        </h3>
       </div>
     </div>
   );

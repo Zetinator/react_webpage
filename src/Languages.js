@@ -4,25 +4,29 @@ export default function Languages() {
   return (
     <div className="languages">
       <h1>Languages</h1>
-      <div>
-        <h3>
-          <span role="img" aria-label="book">
-            ✅
+      <div className="job-row">
+        <p className="lead">
+          <span role="img" aria-label="mexican flag">
+            🇲🇽
           </span>{" "}
           SPANISH (MOTHER TONGUE)
-        </h3>
-        <h3>
-          <span role="img" aria-label="book">
-            ✅
+        </p>
+      </div>
+      <div className="job-row">
+        <p className="lead">
+          <span role="img" aria-label="american flag">
+            🇺🇲
           </span>{" "}
           ENGLISH (FLUENT C1)
-        </h3>
-        <h3>
-          <span role="img" aria-label="book">
-            ✅
+        </p>
+      </div>
+      <div className="job-row">
+        <p className="lead">
+          <span role="img" aria-label="german flag">
+            🇩🇪
           </span>{" "}
-          GERMAN (FLUENT B2)
-        </h3>
+          GERMAN (FLUENT C1)
+        </p>
       </div>
     </div>
   );

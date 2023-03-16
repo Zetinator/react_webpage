@@ -39,6 +39,7 @@ body {
   padding-right: 25px;
   padding-left: 25px;
 }
+
 @media (min-width: 992px) {
   .App-main section {
     margin-left: 240px;
@@ -59,6 +60,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -79,16 +81,20 @@ body {
   font-size: calc(10px + 2vmin);
   transition: opacity 0.5s ease-in;
 }
+
 .mobile {
   display: flex;
 }
+
 .app-bar {
   transition: all 0.5s ease-in;
 }
+
 @media (min-width: 992px) {
   .nav-bar {
     display: flex;
   }
+
   .app-bar {
     display: none;
   }
@@ -133,6 +139,7 @@ h1.gross {
   margin-right: 1rem;
   margin-bottom: 4.5rem;
 }
+
 @media (max-width: 992px) {
   h1.gross {
     font-size: 4.5rem;
@@ -178,6 +185,7 @@ a.btn {
   color: #ffffff;
   text-decoration: none;
 }
+
 .whiter:hover {
   border: 0.1rem solid #ffffff;
   padding-right: 0.2rem;
@@ -187,6 +195,7 @@ a.btn {
 .darker {
   transition: all 0.1s ease-in;
 }
+
 .darker:hover {
   border: 0.1rem solid #61dafb;
   border-radius: 5px;
@@ -240,6 +249,7 @@ p.job-description {
   font-size: 1rem;
   text-justify: inter-word;
 }
+
 p.date {
   /*color: rgba(255,255,255,.9);*/
   color: #61dafb;
@@ -259,6 +269,7 @@ p.date {
   0% {
     box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
   }
@@ -281,10 +292,12 @@ p.date {
   transform: translate(0rem, 0.3rem);
   color: white;
 }
+
 @media (max-width: 992px) {
   .play-arrow {
     font-size: 4rem;
   }
+
   .btn-video {
     height: 4rem;
     width: 4rem;
@@ -308,6 +321,7 @@ p.date {
 .pulse {
   animation: shadow-pulse 1s infinite;
 }
+
 .single-pulse {
   animation: shadow-pulse 1s 1;
 }
@@ -387,9 +401,10 @@ p.date {
 /*layout*/
 /*-----------------------*/
 
-section > div {
+section>div {
   width: 100%;
 }
+
 div.job-row {
   display: flex;
   align-items: stretch;
@@ -400,14 +415,17 @@ div.job-row {
 div.left {
   width: 80%;
 }
+
 div.right {
   width: 20%;
   text-align: right;
 }
+
 @media (max-width: 992px) {
   div.left {
     width: 100%;
   }
+
   div.right {
     width: 100%;
     text-align: left;
@@ -433,11 +451,12 @@ div.white-container {
 img.zoom {
   height: 60px;
   margin-left: 20px;
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
+  /* Animation */
   margin: 0 auto;
 }
+
 img.zoom:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

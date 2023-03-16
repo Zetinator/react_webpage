@@ -115,7 +115,7 @@ export default function About() {
           <i className="fab fa-facebook-f"></i>
         </a>
         <a
-          href="https://wa.me/525586867462"
+          href="https://wa.me/16503073102"
           target="_blank"
           rel="noopener noreferrer"
         >

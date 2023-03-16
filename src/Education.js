@@ -7,7 +7,7 @@ function Institution(props) {
         <h2 className="blue">
           <span role="img" aria-label="book">
             📖
-            </span>{" "}
+          </span>{" "}
           {props.major}
         </h2>
         <h3>
