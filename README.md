@@ -63,6 +63,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
+Update the origin master
+```
+git remote set-url origin https://github.com/Zetinator/zetinator.github.io.git
+```
+
+```
+npm run deploy
+```
+
+Dont forget to use the stupid github tokens instead of the password, update the token.
+
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
