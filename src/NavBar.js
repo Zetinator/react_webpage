@@ -24,9 +24,9 @@ function MobileBar(props) {
         rel="noopener noreferrer"
       >
         <img
-          className="profile-bild"
-          src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
-          alt="zetinator's profile bild"
+          className="profile-picture"
+          src="/profile_picture.jpg"
+          alt="zetinator's profile picture"
         />
       </a>
       <List>
@@ -63,9 +63,9 @@ function SideBar(props) {
         rel="noopener noreferrer"
       >
         <img
-          className="profile-bild"
-          src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
-          alt="zetinator's profile bild"
+          className="profile-picture"
+          src="/profile_picture.jpg"
+          alt="zetinator's profile picture"
         />
       </a>
       <List>
@@ -179,8 +179,8 @@ export default function NavBar(props) {
               >
                 <img
                   className="mini"
-                  src="https://drive.google.com/uc?export=download&id=1fxvbjK2XT27vCIexXxxvvV9sk-d8ELvq"
-                  alt="zetinator's profile bild"
+                  src="/profile_picture.jpg"
+                  alt="zetinator's profile picture"
                 />
               </a>
             </Toolbar>
